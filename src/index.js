@@ -3,7 +3,7 @@ import Notiflix from 'notiflix';
 import axios from "axios";
 import CARD from './partials/card.hbs';
 import NewsApiServise from './api_service';
-
+import simpleLightbox from './simpleLightbox'
 
 
 
@@ -37,10 +37,11 @@ function hitsMarkup(hits) {
     refs.hitsCard.insertAdjacentHTML("beforeend", markup) ;
     console.log(markup);
 };
-
+// onPicClickLight();
 function clearHitsMarkup() {
     refs.hitsCard.innerHTML = "";
-}
+};
+
 
 
 

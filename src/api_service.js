@@ -18,6 +18,7 @@ export default class NewsApiServise{
             params: {
                 key: "25375728-e2c7b91f69f9e26292dffaef5",
                 q: this.searchQuery,
+                
                 image_type: "photo",
                 orientation: "horizontal",
                 safesearch: true,
