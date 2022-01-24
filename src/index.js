@@ -37,7 +37,7 @@ function hitsMarkup(hits) {
     refs.hitsCard.insertAdjacentHTML("beforeend", markup) ;
     console.log(markup);
 };
-// onPicClickLight();
+onPicClickLight();
 function clearHitsMarkup() {
     refs.hitsCard.innerHTML = "";
 };
