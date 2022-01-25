@@ -27,10 +27,16 @@ export default class NewsApiServise{
             },
             
         };
+        
         const search = await axios(options);
         this.page += 1;
      
-        return search.data.hits
+        const hits = search.data.hits;
+        const totalHits = search.data.totalHits;
+
+        return { hits, totalHits }; 
+
+        
         // .then(data => {
                 
         //     return data.hits;
